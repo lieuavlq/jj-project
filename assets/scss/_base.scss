@@ -1,0 +1,50 @@
+@use '_const' as *;
+@use "sass:math";
+
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  color: $color-main;
+  font-family: $font-sans;
+  font-size: 18px;
+  line-height: 2.28;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+a {
+  color: $color-main;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+@mixin inner {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  @include sp {
+    padding-left: vw(20);
+    padding-right: vw(20);
+  }
+}
+.inner {
+  @include inner;
+  max-width: 1400px;
+}
+@include pc {
+  .only-sp {
+    display: none !important;
+  }
+}
+@include sp {
+  .only-pc {
+    display: none !important;
+  }
+}
