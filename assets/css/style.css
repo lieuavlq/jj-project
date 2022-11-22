@@ -50,5 +50,248 @@ a:hover {
     display: none !important;
   }
 }
+.ttl-sec {
+  font-size: 38px;
+  line-height: 50px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  margin-top: -60px;
+}
+
+.product-item {
+  margin-top: 60px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.product-item a {
+  display: block;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .product-item a {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .product-item a:hover {
+    opacity: 0.7;
+  }
+}
+@media screen and (min-width: 768px) {
+  .product-item a:hover .product-img img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+.product-item img {
+  display: block;
+  width: 100%;
+}
+
+.product-img {
+  position: relative;
+  overflow: hidden;
+}
+.product-img img {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.product-img:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: url(/assets/images/ico-arrow-01.svg) no-repeat 0 0/100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.product-ttl {
+  margin-top: 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 240px;
+  height: 50px;
+  margin: auto;
+  border: 1px solid #407995;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #407995;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .button {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .button:hover {
+    opacity: 0.7;
+  }
+}
+
+.header-inr {
+  padding: 18px 40px 17px;
+}
+
+.header-logo {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 0;
+}
+.header-logo img {
+  display: block;
+}
+
+.footer {
+  background: #407995;
+  padding: 110px 0 100px;
+  color: #fff;
+  position: relative;
+}
+.footer:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url(/assets/images/bg-footer.svg) repeat-x right 0/contain;
+  position: absolute;
+  top: 0;
+  right: 62.5%;
+  opacity: 0.4;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo img {
+  display: block;
+}
+
+.footer-cr {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 19px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 95px;
+}
+
+.footer-nav .list-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.footer-nav .list-menu li {
+  margin-top: 10px;
+}
+
+.main-mv {
+  position: relative;
+}
+
+.main-mv-txt {
+  font-size: 60px;
+  line-height: 96px;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  left: 100px;
+  bottom: 110px;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.txt-sec {
+  padding: 180px 0 185px;
+  text-align: center;
+  background: url(/assets/images/top/bg-txt-sec.svg) no-repeat center -81px/auto;
+}
+
+.txt-sec-ttl {
+  font-size: 26px;
+  line-height: 46px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.txt-sec-inr {
+  margin-top: 70px;
+}
+.txt-sec-inr > * + * {
+  margin-top: 35px;
+}
+
+.img-sec img {
+  display: block;
+  width: 100%;
+}
+
+.product-sec {
+  padding: 200px 0;
+}
+
+.product-sec .button {
+  margin-top: 80px;
+}
+
+.pickup-slide {
+  height: 715px;
+  max-width: 840px;
+  margin: auto;
+}
+
+.pickup-item {
+  padding: 0 20px;
+  position: relative;
+  top: 465px;
+}
+.pickup-item.slick-current {
+  top: auto;
+}
+.pickup-item.slick-current .pickup-ttl {
+  display: block;
+}
+.pickup-item.slick-current .pickup-img {
+  max-width: 800px;
+}
+
+.pickup-slide .slick-list {
+  overflow: visible;
+}
+
+.pickup-slide .slick-track {
+  -webkit-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.pickup-img {
+  max-width: 160px;
+}
+
+.pickup-ttl {
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */

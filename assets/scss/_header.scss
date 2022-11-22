@@ -1,2 +1,13 @@
 @use '_const' as *;
 
+.header-inr {
+  padding: 18px 40px 17px;
+}
+.header-logo {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 0;
+  img {
+    display: block;
+  }
+}

@@ -1,2 +1,52 @@
 @use '_const' as *;
 
+.footer {
+  background: #407995;
+  padding: 110px 0 100px;
+  color: #fff;
+  position: relative;
+  &:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: url(/assets/images/bg-footer.svg) repeat-x right 0 / contain;
+    position: absolute;
+    top: 0;
+    right: 62.5%;
+    opacity: .4;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.footer-logo {
+  img {
+    display: block;
+  }
+}
+.footer-cr {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 19px;
+}
+.footer-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 95px;
+}
+.footer-nav .list-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  li {
+    margin-top: 10px;
+  }
+}

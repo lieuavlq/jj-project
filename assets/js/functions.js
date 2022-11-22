@@ -1,3 +1,27 @@
+/* top */
+$(function(){
+  // main mv
+  $('.main-mv-slide').slick({
+    infinite: true,
+    arrows: false,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    pauseOnHover: false,
+    autoplay: true
+  });
+
+  // pick up section
+  $('.pickup-slide').slick({
+    infinite: true,
+    dots: true,
+    centerMode: true,
+    variableWidth: true,
+    slidesToScroll: 1,
+    slidesToShow: 2
+  });
+});
+
 /* common */
 $(function(){
   // link anchor

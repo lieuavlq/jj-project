@@ -1,0 +1,75 @@
+@use '_const' as *;
+
+.main-mv {
+  position: relative;
+}
+.main-mv-txt {
+  font-size: 60px;
+  line-height: 96px;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  left: 100px;
+  bottom: 110px;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+.txt-sec {
+  padding: 180px 0 185px;
+  text-align: center;
+  background: url(/assets/images/top/bg-txt-sec.svg) no-repeat center -81px / auto;
+}
+.txt-sec-ttl {
+  font-size: 26px;
+  line-height: 46px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+.txt-sec-inr {
+  margin-top: 70px;
+  > * + * {
+    margin-top: 35px;
+  }
+}
+.img-sec img {
+  display: block;
+  width: 100%;
+}
+.product-sec {
+  padding: 200px 0;
+}
+.product-sec .button {
+  margin-top: 80px;
+}
+.pickup-slide {
+  height: 715px;
+  max-width: 840px;
+  margin: auto;
+}
+.pickup-item {
+  padding: 0 20px;
+  position: relative;
+  top: 465px;
+  &.slick-current {
+    top: auto;
+    .pickup-ttl {
+      display: block;
+    }
+    .pickup-img {
+      max-width: 800px;
+    }
+  }
+}
+.pickup-slide .slick-list {
+  overflow: visible;
+}
+.pickup-slide .slick-track {
+  -webkit-transition: transform .5s ease;
+  transition: transform .5s ease;
+}
+.pickup-img {
+  max-width: 160px;
+}
+.pickup-ttl {
+  display: none;
+}

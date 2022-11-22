@@ -48,3 +48,76 @@ a {
     display: none !important;
   }
 }
+.ttl-sec {
+  font-size: 38px;
+  line-height: 50px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  margin-top: -60px;
+}
+.product-item {
+  margin-top: 60px;
+  font-size: 16px;
+  line-height: 22px;
+  a {
+    display: block;
+    text-decoration: none;
+    @include hover;
+    @include pc {
+      &:hover {
+        .product-img {
+          img {
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+.product-img {
+  position: relative;
+  overflow: hidden;
+  img {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  &:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url(/assets/images/ico-arrow-01.svg) no-repeat 0 0 / 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+.product-ttl {
+  margin-top: 20px;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 240px;
+  height: 50px;
+  margin: auto;
+  border: 1px solid #407995;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #407995;
+  text-decoration: none;
+  @include hover;
+}
