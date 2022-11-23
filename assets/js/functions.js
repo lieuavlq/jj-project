@@ -37,3 +37,25 @@ $(function(){
     }
   });
 });
+
+
+/* detail */
+$(function(){
+   $('.product-detail-sliderImg').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    prevArrow:"<img class='slick-prev' src='/assets/images/products/detail/ico-arrow-left.svg'>",
+    nextArrow:"<img class='slick-next' src='/assets/images/products/detail/ico-arrow-right.svg'>",
+    asNavFor: '.product-detail-sliderNav'
+  });
+  $('.product-detail-sliderNav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.product-detail-sliderImg',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true
+  });
+});

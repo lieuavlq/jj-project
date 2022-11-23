@@ -1,0 +1,138 @@
+@use '_const' as *;
+.product-detail {
+  display: flex;
+  justify-content: space-between;
+}
+.product-detail-slider {
+  width: calc(800/1400*100%);
+}
+.product-detail-info {
+  width: calc(520/1400*100%);
+}
+.product-related {
+  width: calc(800/1400*100%);
+  margin-bottom: 100px;
+  margin-top: 80px;
+  .product-list {
+    margin: 0 -20px;
+    gap: inherit;
+  }
+  .product-item {
+    width: 33.33333%;
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+}
+.product-related-ttl {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: calc(36/28);
+  margin-bottom: 55px;
+}
+.craftsman {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.craftsman-avartar {
+  width: 50px;
+}
+.craftsman-name {
+  font-size: 16px;
+  margin-left: 20px;
+}
+.product-detail-name {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.product-detail-desc {
+  font-size: 16px;
+  line-height: 2;
+}
+.product-detail-price {
+  margin-top: 72px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+.product-detail-link {
+  font-size: 14px;
+  margin-top: 9px;
+  color: #407995;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.product-detail-btn {
+  margin-top: 55px;
+  font-size: 16px;
+  line-height: calc(21/16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #407995;
+  border: 1px solid #407995;
+  border-radius: 999px;
+  width: 100%;
+  height: 50px;
+  text-decoration: none;
+}
+.product-detail-more {
+  background: #F4F5F6;
+  padding: 0 30px 30px;
+  overflow: hidden;
+  margin-top: 60px;
+  p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 2;
+  }
+}
+.product-detail-tag {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  span {
+    background: #fff;
+    border-radius: 99px;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px 10px 1px;
+    min-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+  }
+}
+.product-slider-item {
+  img {
+    width: 100%;
+  }
+}
+.product-detail-sliderNav {
+  margin-top: 20px;
+  .product-slider-item {
+    margin-right: 10px;
+    width: 125px;
+  }
+  .slick-list {
+    padding: 0;
+  }
+}
+.product-detail-sliderImg {
+  .slick-arrow {
+    width: 30px;
+    height: 30px;
+  }
+  .slick-prev {
+    left: 30px;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 30px;
+  }
+}
