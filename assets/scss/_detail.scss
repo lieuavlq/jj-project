@@ -1,7 +1,9 @@
 @use '_const' as *;
+
 .product-detail {
   display: flex;
   justify-content: space-between;
+  margin-top: 60px;
 }
 .product-detail-slider {
   width: calc(800/1400*100%);

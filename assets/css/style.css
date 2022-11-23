@@ -116,6 +116,10 @@ a:hover {
   margin-top: 20px;
 }
 
+.product-row {
+  padding: 100px 0;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -281,10 +285,15 @@ a:hover {
   margin-top: 80px;
 }
 
+.pickup-sec {
+  padding-bottom: 70px;
+  background: url(/assets/images/top/bg-pickup.svg) repeat-x 0 bottom/auto;
+}
+
 .pickup-slide {
   height: 715px;
   max-width: 840px;
-  margin: auto;
+  margin: auto !important;
 }
 
 .pickup-item {
@@ -311,11 +320,68 @@ a:hover {
   transition: transform 0.5s ease;
 }
 
+.pickup-slide .slick-arrow {
+  width: 30px;
+  height: 30px;
+  background: url(/assets/images/ico-arrow-02.svg) no-repeat 0 0/100%;
+  z-index: 1;
+  top: calc(50% - 66px);
+}
+@media screen and (min-width: 768px) {
+  .pickup-slide .slick-arrow {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .pickup-slide .slick-arrow:hover {
+    opacity: 0.7;
+  }
+}
+.pickup-slide .slick-arrow:before {
+  display: none;
+}
+
+.pickup-slide .slick-next {
+  right: -50px;
+}
+
+.pickup-slide .slick-prev {
+  left: -50px;
+  transform: rotate(180deg);
+}
+
+.pickup-slide .slick-dots {
+  bottom: -5px;
+}
+
+.pickup-slide .slick-dots li {
+  width: auto;
+  height: auto;
+  padding: 5px;
+  margin: 0;
+}
+.pickup-slide .slick-dots li.slick-active button, .pickup-slide .slick-dots li:hover button {
+  background: #407995;
+}
+
+.pickup-slide .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(64, 121, 149, 0.3);
+  display: block;
+}
+.pickup-slide .slick-dots li button:before {
+  display: none;
+}
+
 .pickup-img {
   max-width: 160px;
 }
 
 .pickup-ttl {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 20px;
   display: none;
 }
 
@@ -326,6 +392,7 @@ a:hover {
 .static-block-img {
   width: 100%;
   text-align: right;
+  margin-right: -8px;
 }
 
 .static-block-title {
@@ -366,13 +433,10 @@ a:hover {
   }
 }
 
-.category-row {
-  padding: 100px 0;
-}
-
 .product-detail {
   display: flex;
   justify-content: space-between;
+  margin-top: 60px;
 }
 
 .product-detail-slider {
