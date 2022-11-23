@@ -454,11 +454,11 @@ a:hover {
 
 .product-related {
   width: 57.1428571429%;
-  margin-bottom: 100px;
-  margin-top: 80px;
+  margin-bottom: 115px;
+  margin-top: 50px;
 }
 .product-related .product-list {
-  margin: 0 -20px;
+  margin: -30px -20px 0;
   gap: inherit;
 }
 .product-related .product-item {
