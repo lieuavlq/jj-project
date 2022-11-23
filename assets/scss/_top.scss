@@ -73,3 +73,44 @@
 .pickup-ttl {
   display: none;
 }
+
+.static-block{
+  padding-top: 200px
+}
+
+.static-block-img{
+  width: 100%;
+  text-align: right;
+}
+
+.static-block-title{
+  font-size: 26px;
+  line-height: calc(46/26);
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 100px 0 
+}
+
+.static-block-list{
+  padding: 100px 0 200px
+}
+
+.rows{  
+  margin-left: -20px;
+  margin-right: -20px;
+  display: flex;
+  flex-wrap: wrap
+}
+
+.col{
+  padding: 0 20px;
+  width: 50%;
+}
+
+.columns-3 .col{
+  width: 33.33%
+}
+
+.static-block-link{
+  @include hover
+}

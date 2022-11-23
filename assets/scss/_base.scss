@@ -121,3 +121,30 @@ a {
   text-decoration: none;
   @include hover;
 }
+
+.breadcrumb{
+  background: $color01;
+  padding: 10px 0 9px
+}
+
+.breadcrumb-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center
+}
+
+.breadcrumb-item{
+  font-size: 14px;
+  & + &{
+    &:before{
+      content: '＞';
+      margin: 0 15px 
+    }
+  }
+}
+
+.breadcrumb-link{
+  text-decoration: underline;
+  font-size: 14px;
+  color: $color02
+}
