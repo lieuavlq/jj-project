@@ -385,17 +385,18 @@ a:hover {
   display: none;
 }
 
-.static-block {
+.static-sec {
   padding-top: 200px;
+  background: url(/assets/images/top/bg-txt-sec.svg) no-repeat center 493px/auto;
 }
 
-.static-block-img {
+.static-sec-img {
   width: 100%;
   text-align: right;
   margin-right: -8px;
 }
 
-.static-block-title {
+.static-sec-title {
   font-size: 26px;
   line-height: 1.7692307692;
   font-weight: 500;
@@ -403,7 +404,11 @@ a:hover {
   margin: 100px 0;
 }
 
-.static-block-list {
+.static-sec-text > * + * {
+  margin-top: 35px;
+}
+
+.static-sec-list {
   padding: 100px 0 200px;
 }
 
@@ -424,11 +429,11 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-  .static-block-link {
+  .static-sec-link {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .static-block-link:hover {
+  .static-sec-link:hover {
     opacity: 0.7;
   }
 }
