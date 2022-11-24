@@ -15,10 +15,9 @@ $(function(){
   $('.pickup-slide').slick({
     infinite: true,
     dots: true,
-    centerMode: true,
     variableWidth: true,
     slidesToScroll: 1,
-    slidesToShow: 2
+    slidesToShow: 3
   });
 });
 
